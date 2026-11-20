@@ -110,7 +110,7 @@ def main():
             "cefr": sc["title"].split("（")[-1].rstrip("）") if "（" in sc["title"] else "B1",
             "goal": sc["goal"], "brief": meta["brief"], "focus": sc["cover"],
             "steps": steps, "startProgress": 20,
-            "stepGain": 8 if complex_scene else 10, "passAt": 90,
+            "stepGain": 8 if complex_scene else 10, "passAt": 80,
             "scene": f"assets/scenes_ui/scene_{meta['scene']}.png",
             "npc": f"assets/npc/{meta['npc']}.png",
             "npcName": NPC_NAME[meta["npc"]],

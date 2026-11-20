@@ -13,7 +13,7 @@ window.SCENES = [
     "steps": 8,
     "startProgress": 20,
     "stepGain": 10,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_coffee.png",
     "npc": "assets/npc/barista.png",
     "npcName": "店员"
@@ -31,7 +31,7 @@ window.SCENES = [
     "steps": 8,
     "startProgress": 20,
     "stepGain": 10,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_restaurant.png",
     "npc": "assets/npc/waiter.png",
     "npcName": "服务员"
@@ -49,7 +49,7 @@ window.SCENES = [
     "steps": 8,
     "startProgress": 20,
     "stepGain": 10,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_hotel.png",
     "npc": "assets/npc/receptionist.png",
     "npcName": "前台"
@@ -67,7 +67,7 @@ window.SCENES = [
     "steps": 8,
     "startProgress": 20,
     "stepGain": 10,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_airport.png",
     "npc": "assets/npc/checkin.png",
     "npcName": "值机员"
@@ -85,7 +85,7 @@ window.SCENES = [
     "steps": 8,
     "startProgress": 20,
     "stepGain": 10,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_subway.png",
     "npc": "assets/npc/commuter.png",
     "npcName": "路人"
@@ -103,7 +103,7 @@ window.SCENES = [
     "steps": 8,
     "startProgress": 20,
     "stepGain": 10,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_shop.png",
     "npc": "assets/npc/clerk.png",
     "npcName": "店员"
@@ -121,7 +121,7 @@ window.SCENES = [
     "steps": 10,
     "startProgress": 20,
     "stepGain": 8,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_gate.png",
     "npc": "assets/npc/clerk.png",
     "npcName": "店员"
@@ -139,7 +139,7 @@ window.SCENES = [
     "steps": 10,
     "startProgress": 20,
     "stepGain": 8,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_interview.png",
     "npc": "assets/npc/manager.png",
     "npcName": "面试官"
@@ -157,7 +157,7 @@ window.SCENES = [
     "steps": 10,
     "startProgress": 20,
     "stepGain": 8,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_meeting.png",
     "npc": "assets/npc/manager.png",
     "npcName": "面试官"
@@ -175,7 +175,7 @@ window.SCENES = [
     "steps": 8,
     "startProgress": 20,
     "stepGain": 10,
-    "passAt": 90,
+    "passAt": 80,
     "scene": "assets/scenes_ui/scene_office.png",
     "npc": "assets/npc/colleague.png",
     "npcName": "同事"

@@ -554,31 +554,31 @@ window.QUESTIONS = [
     id: "gate_dp8",
     scene: "gate",
     step: 8,
-    focus: "结束 | 考点：致谢与收尾",
-    npc: "We're sorry again for the disruption. Here's your new boarding pass.",
-    options: ["Could you also print me a copy of the receipt?", "Actually, could you move me to the 11:00 flight?", "Thanks very much.", "Thanks for sorting that out so quickly — it's been a long day, but I appreciate the help."],
+    focus: "追问改签费用 | 考点：询问附加条件",
+    npc: "Before I issue the new boarding pass, is there anything else you need to sort out?",
+    options: ["Could you also print me a copy of the receipt?", "Actually, could you move me to the 11:00 flight?", "Thanks very much.", "Could you confirm the change fee is waived, since the delay is on your side?"],
     answer: 3,
-    explain: "正确项完整且符合真实情境的情绪节奏——一天被延误折腾，最后一句 `I appreciate the help` 才说得诚恳。`also print me a copy of the receipt`提出了新请求。`move me to the 11:00 flight`提了不同诉求。`Thanks very much`太简略，没接住对方的道歉。"
+    explain: "正确项用 `since the delay is on your side` 给出理由，再请对方确认费用，是航司原因延误时最该问的一句。`print me a copy of the receipt`转到了收据，没触及费用。`move me to the 11:00 flight`改了航班需求。`Thanks very much`太简略，放弃了确认关键条款的机会。"
   },
   {
     id: "gate_dp9",
     scene: "gate",
     step: 9,
-    focus: "追问改签费用 | 考点：询问附加条件",
-    npc: "I can move you to tomorrow's 09:15 flight. There is a change fee of 50 dollars.",
-    options: ["Does the change fee apply if the delay is on your side?", "Could you tell me where to get the meal voucher?", "Actually, could you upgrade me to business class?", "A meal voucher is fine, thanks."],
+    focus: "行李直挂确认 | 考点：确认托运安排",
+    npc: "Good news — the fee has been waived. Your checked bag can be collected in Frankfurt or checked through to Osaka.",
+    options: ["Please check it through to Osaka — I'll collect it there.", "How long does baggage claim usually take?", "Actually, could you send my bag to my hotel instead?", "Yes, I'll collect it in Frankfurt, thanks."],
     answer: 0,
-    explain: "正确项用 `Does…apply if…` 确认条款适用范围——因航空公司原因延误，往往可以主张免改签费，这是真实场景里的关键一问。`the change fee apply if the delay is on` 语法正确，但问的是「有没有别的航班」，没有触及费用这个真正的问题。A 转移话题，同样没问费用。D 语气生硬，且没了解规则就做决定。C 直接砍价在柜台通常无效，`make it lower` 也不合搭配（应为 `lower it`）。"
+    explain: "正确项用 `check it through to` 加 `collect it there` 把「直挂到哪里、在哪里取」一次说清，正符合你今天必须到大阪的目标。`baggage claim usually take`问的是耗时，不是取行李的地点。`send my bag to my hotel`换了取件方式，柜台办不到。`collect it in Frankfurt`会让你中转时拖着行李，耽误今天到大阪的安排。"
   },
   {
     id: "gate_dp10",
     scene: "gate",
     step: 10,
-    focus: "行李直挂确认 | 考点：确认托运安排",
-    npc: "Would you like to collect your checked bag at Frankfurt, or have it checked through?",
-    options: ["How long does baggage claim usually take?", "Actually, could you send my bag to my hotel instead?", "Please check it through to Osaka — I'll collect it there.", "Yes, I'll take my bag at Frankfurt."],
+    focus: "收尾致谢 | 考点：回应道歉与收尾",
+    npc: "Everything's sorted — here's your new boarding pass and a meal voucher.",
+    options: ["Could you also upgrade me to business class?", "Actually, could you move me to the 11:00 flight?", "Thanks for sorting that out so quickly — it's been a long day, but I appreciate the help.", "Thanks very much."],
     answer: 2,
-    explain: "正确项用 `check it through to + 目的地` + `collect it there` 两句说清意图，是转机行李的标准表达。A 也说得通，但省略了「在哪里取」，客服还得追问一次。B 只说了不要在哪取，没说自己要怎么取，客服无从操作。D 语法正确，但否掉直挂后也没说清自己到底要怎样。"
+    explain: "正确项先感谢对方的处理效率，再用 `it's been a long day` 接住道歉，情绪与语气都到位。`upgrade me to business class`提了新诉求。`move me to the 11:00 flight`推翻了刚确认的安排。`Thanks very much`太简略，没回应对方的道歉。"
   },
   {
     id: "interview_dp1",
@@ -664,21 +664,21 @@ window.QUESTIONS = [
     id: "interview_dp9",
     scene: "interview",
     step: 9,
-    focus: "争取额外支持 | 考点：表达诉求并留退路",
-    npc: "Let me know if there's anything else you need before we close the call.",
-    options: ["Could you send me the reimbursement policy in writing, so I have it for my records?", "Could you tell me what the office hours are?", "Actually, I'd like to talk about my salary now.", "No, nothing else, thank you very much."],
+    focus: "询问后续流程 | 考点：确认下一步",
+    npc: "Before we finish — what would you like to know about the next steps?",
+    options: ["Could you let me know roughly when I'll hear back, and what the next round involves?", "Could you tell me what the office hours are?", "Actually, could we start the second round now?", "No, nothing else, thank you very much."],
     answer: 0,
-    explain: "正确项用 `Could you…` 请求、并用 `so I have it for my records` 说明用途——两句话把「要什么」和「为什么要」都讲清，是职场沟通的标准做法。`nothing else, thank you very much` 过于简略。C 答非所问且语气生硬。D 是祈使命令（`You should…`），对客服说很不合适。"
+    explain: "正确项一次问清「什么时候有消息」和「下一轮是什么」，把反问环节用在推进流程上。`what the office hours are`问作息，是个人便利而不是岗位本身。`start the second round now`想当场加试，不现实。`No, nothing else`放弃了了解流程的机会。"
   },
   {
     id: "interview_dp10",
     scene: "interview",
     step: 10,
-    focus: "约定后续跟进 | 考点：确认下一步",
-    npc: "I'll email you the updated quote by end of day.",
-    options: ["Could you tell me when exactly I'll hear from you?", "Actually, could we set up a second interview now?", "Perfect — could you send it to my work address, and cc me on the invoice?", "Good. I will wait for your email then, thank you."],
+    focus: "约定资料送达 | 考点：确认交付方式",
+    npc: "Of course. I'll email you the next-step details by end of day.",
+    options: ["Could you tell me when exactly I'll hear from you?", "Actually, could we set up a second interview now?", "Perfect — could you send it to my work address, and copy the recruiter on it?", "Good, I'll wait for your email then, thank you."],
     answer: 2,
-    explain: "正确项先回应、再提出两个具体请求（发到哪个地址、抄送发票），是「推进任务」的标准表达。A/B 只回应不推进，没有确认具体交付方式。D 语气生硬（`I hope you send it soon` 暗含责备），而且没有确认任何事情。"
+    explain: "正确项先回应再提出两个具体请求（发到哪个邮箱、抄送谁），是职场推进任务的标准写法。`when exactly I'll hear from you`只追问时间，没确认送达方式。`set up a second interview now`越过了当前流程。`I'll wait for your email`只是被动等待，没有确认任何细节。"
   },
   {
     id: "meeting_dp1",
@@ -768,7 +768,7 @@ window.QUESTIONS = [
     npc: "You mentioned the model is preliminary. Do you have a validated version yet?",
     options: ["Not yet — the model is still preliminary, but I'll have a validated version by Friday.", "Could you tell me who prepared this deck?", "Actually, could we skip this slide?", "Yes, I have the final version, I can send it today."],
     answer: 0,
-    explain: "正确项用 `Not yet` 直接回应是非问句（而不是绕开），再给出明确的时间承诺——`I'll have…by Friday` 是职场英语的标准承诺句式。B 语序错（`do not have…yet` 应在助动词后立刻否定，但这里缺 `I` 的位置尚可，问题在 `I will have it by Friday` 缺少将来时标记的完整结构）。`have the final version, I can send it today` 撒谎。D 是话轮功能错——对方问有没有、答的却是\"我不做这个\"，答非所问。"
+    explain: "正确项用 `Not yet` 直接回答是非问句，再给出明确的兑现时间——`I'll have…by Friday` 是职场英语的标准承诺句式。`who prepared this deck`转向追问来源，没有回答有没有验证版。`skip this slide`想跳过话题，回避了问题。`Yes, I have the final version`与「仍是初稿」的事实不符，也无法兑现。"
   },
   {
     id: "meeting_dp10",
@@ -778,7 +778,7 @@ window.QUESTIONS = [
     npc: "That's all from me. Anything else before we wrap up?",
     options: ["Could you tell me what the deadline for the pricing page is?", "Actually, could we schedule a follow-up meeting?", "One thing — let's confirm who's taking the pricing page by Thursday.", "No, I think that is everything, thank you."],
     answer: 2,
-    explain: "正确项用 `One thing` 引出并落到具体行动项（谁做、周几前），是收尾会议的标准句式——既回应了对方，又推进了任务。A 答非所问（对方问有没有事要补充，答的却是要谈休假）。`think that is everything, thank you` 过于简略，且没确认关键行动项。C 语法正确，但答的是对演示的评价，没有推进任何事。"
+    explain: "正确项用 `One thing` 引出并落到具体行动项（谁做、周几前），是收尾会议的标准句式——既回应了对方，又推进了任务。`what the deadline for the pricing page is`问的是刚说过的信息，没有推进。`schedule a follow-up meeting`提议另开会，没有在本次收尾确认。`No, I think that is everything`只是结束动作，遗漏了关键行动项的确认。"
   },
   {
     id: "office_dp1",
